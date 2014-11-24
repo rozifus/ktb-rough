@@ -1,0 +1,41 @@
+{{define "head"}}
+  <title>KTB</title>
+  <meta name="robots" content="NOINDEX">
+{{end}}
+
+{{define "body"}}
+  <div class="ui inverted page grid segment">
+    <div class="column">
+      <div class="ui inverted secondary pointing menu">
+        <div class="ui item dropdown link">
+          Kiva Team Bootstrapper
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item">Popular</div>
+            <div class="item">Recent</div>
+            <div class="item">Add Team</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui page grid segment">
+    <div class="row">
+      <div class="column">
+        <h1 class="ui center aligned header">
+          Popular Teams
+        </h1>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="ten wide column">
+        <ul>
+          {{range .Teams}}
+          <li>{{.}}</li>
+          {{end}}
+        </ul>
+      </div>
+    </div>
+  </div>
+{{end}}

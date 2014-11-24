@@ -1,0 +1,35 @@
+{{define "head"}}
+  <title>KTB - Add Team</title>
+  <meta name="robots" content="NOINDEX">
+{{end}}
+
+{{define "body"}}
+  <div class="ui page grid">
+    <div class="row">
+      <div class="column">
+        &nbsp;
+        <section id="r-add-team-form"></section>
+        <div class="ui inverted a-add-team form segment">
+          <div class="a-team field">
+            <label>Kiva Team</label>
+            <div class="ui left labeled icon input">
+              <input type="text" />
+              <i class="users icon"></i>
+            </div>
+          </div>
+          <div class="a-user field">
+            <label>Kiva User</label>
+            <div class="ui left labeled icon input">
+              <input type="text" />
+              <i class="user icon"></i>
+            </div>
+          </div>
+          <br />
+          <div class="ui green ktb-add-team submit button">
+            Submit
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{{end}}
