@@ -1,6 +1,6 @@
 {
   "name": "ktb",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "description": "Kiva Team Bootstrapper",
   "main": "js/app.js",
   "dependencies": {
@@ -19,8 +19,8 @@
     "watchify": "^2.1.1"
   },
   "scripts": {
-    "start": "./node_modules/.bin/watchify -o static/js/bundle.js -v -d .",
-    "build": "NODE_ENV=production browserify . | uglifyjs -cm > js/bundle.min.js",
+    "start": "./node_modules/.bin/watchify -o ./static/bundle/app-bundle.js -v -d ./static/js/App.js",
+    "build": "NODE_ENV=production browserify . | uglifyjs -cm > ./static/bundle/app-bundle.min.js",
     "test": "jest"
   },
   "author": "rozifus",
