@@ -5,18 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
     {{/*<link href="{{staticPath "/-/site.css"}}" rel="stylesheet" />*/}}
-    
     <link rel="stylesheet" type="text/css" href="/static/semantic-ui-1.0.0/dist/semantic.css" />
     
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.js"></script>
     <script src="/static/semantic-ui-1.0.0/dist/semantic.js"></script>
 
+    <script src="http://fb.me/react-0.12.0.js"></script>
+    <script src="http://fb.me/JSXTransformer-0.12.0.js"></script>
+    <script src="/static/lib/react-mixin-manager-0.8.0.js"></script>
+    <script src="/static/lib/react-semantic-ui-0.2.0.js"></script>
+
+    <script type="text/jsx" src="/static/app/js/AddTeamForm.jsx"></script>
+    <script type="text/jsx" src="/static/app/js/AddTeam.jsx"></script>
+    <script type="text/jsx" src="/static/app/js/App.jsx"></script>
 
     {{template "head" .}}
   </head>
   <body>
-    <section id="react-app"></section>
-    <script src="/static/bundle/app-bundle.js"></script>
+    {{template "nav" .}}
+    {{template "body" .}}
   </body>
 </html>
 

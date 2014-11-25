@@ -1,8 +1,7 @@
 
-var rsui = require('react-semantic-ui'),
-    Form      = rsui.form.Form,
-    Button    = rsui.form.Button,
-    TextInput = rsui.input.Text;
+var React        = require('react'),
+    TextInput    = require('./TextInput'),
+    SubmitButton = require('./SubmitButton');
 
 var AddTeamForm = React.createClass({
 
@@ -12,12 +11,12 @@ var AddTeamForm = React.createClass({
 
   render: function() {
     return(
-      <Form className="inverted segment">
-        <TextInput label="Kiva Team" />
-        <TextInput label="Kiva User" />
+      <div className="ui inverted form segment">
+        <TextInput label="Kiva Team" icon="users"/>
+        <TextInput label="Kiva User" icon="user"/>
         <br />
-        <Button className="green" onClick={this.postForm} label="Submit" />
-      </Form>
+        <SubmitButton color="green" onClick={this.postForm}/>
+      </div>
     );
   },
 
